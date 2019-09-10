@@ -1,443 +1,1117 @@
 <!DOCTYPE html>
-<html>
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
-  
 
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en">
+
+
+
+
+<html lang="zh-CN,en,default">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.0">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.0" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: true,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="a private blog">
+<meta property="og:type" content="website">
+<meta property="og:title" content="workspace of dronemodel">
+<meta property="og:url" content="https://workspaceofdronemodel.com/index.html">
+<meta property="og:site_name" content="workspace of dronemodel">
+<meta property="og:description" content="a private blog">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="workspace of dronemodel">
+<meta name="twitter:description" content="a private blog">
+  <link rel="canonical" href="https://workspaceofdronemodel.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>workspace of dronemodel</title>
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
-</html>
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">workspace of dronemodel</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+      
+      
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-建站过程" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/10/建站过程/" class="article-date">
-  <time datetime="2019-09-10T13:55:04.372Z" itemprop="datePublished">2019-09-10</time>
-</a>
+        <li class="menu-item menu-item-home">
+      
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/日志/">日志</a>
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
   </div>
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+            
+
+          <div id="content" class="content">
+            
+  <div id="posts" class="posts-expand">
+        <article itemscope itemtype="http://schema.org/Article">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/10/建站过程/">建站过程</a>
-    </h1>
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="https://workspaceofdronemodel.com/日志/ck0eh8z0d0006ewpy8hl1opjt">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dronemodel">
+      <meta itemprop="description" content="a private blog">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="workspace of dronemodel">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/日志/ck0eh8z0d0006ewpy8hl1opjt" class="post-title-link" itemprop="url">建站过程</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-10 21:55:04" itemprop="dateCreated datePublished" datetime="2019-09-10T21:55:04+08:00">2019-09-10</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-09-11 06:55:06" itemprop="dateModified" datetime="2019-09-11T06:55:06+08:00">2019-09-11</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/日志/" itemprop="url" rel="index"><span itemprop="name">日志</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/日志/ck0eh8z0d0006ewpy8hl1opjt#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/日志/ck0eh8z0d0006ewpy8hl1opjt" itemprop="commentCount"></span></a>
+  </span>
+  
   
 
+        </div>
       </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>简单写一下我建立blog的经历。</p>
-<p>假期里到各大博物馆看了看，回来就想写点东西。一开始先搜了一下wordpress怎么建站，因为我那时只知道这个，然而在搜索过程中我看到有很多人推荐hexo，轻便快捷。就改选了hexo。建站过程都是跟着教程做的，教程也是网上随便找的，困难在于路上遇到的各种麻烦，我简单写一下。</p>
-<p>1.安装了nodejs后查看版本，可以查看，但是转到blog路径使用npm时却“找不到命令”。期间尝试了重设环境变量、换cmd操作、手动cd到路径、用管理员模式打开git bash等方法，最后把我整晕了之后偶然成功，我也没有精力记录解决方案是什么。</p>
-<p>2.安装hexo时报出大量warn，不能继续安装（即装完后找不到hexo指令，没有版本号）。搜索后把warn内容提示的几个依赖包更新了，并使用cmd完成的安装。用git bash应该也能装，我没试。不过经历了两次安装问题后我对git bash好感大幅下降，再加上界面字体小，安装过程没有高亮提示，不显示安装进度，我已经不想用git bash了。</p>
-<p>3.ssh-key上传到github之后验证是否添加成功，没成功。其实问题不大，按照ssh -T的提示继续操作就好，不要移动.ssh文件夹。好像是.ssh文件夹里缺少一个文件造成的。</p>
-<p>4.域名解析的时候注意，我ping错域名了，应该看yourname.github.io的ip。我查的是我个人域名的ip。这导致github设置页面里提示站点没有上传到域名。</p>
-<p>5.之后就是各种配置个性化，加入各种插件。因为同类型插件往往有多种，我的策略是一种不会用就换另一种，勉强是配完了网站。</p>
-<hr>
-<h6 id="建站之后"><a href="#建站之后" class="headerlink" title="建站之后"></a>建站之后</h6><p>1.markdown里链接语法是 [描述]:链接 ，可是我加了之后在generate阶段并没有生成链接的html语句，站点页面里自然不会有链接，整个语句连同链接描述都消失了。简单说，插入链接失败。多次尝试后发现，如果同一行里方括号 [ ] 之前有其他字符就可以显示语句，如果 [ ] 与 : 之间有空格也可以，总之要把插入链接的语句独立起来。但是效果只是链接文本本身可以点击，链接描述还是普通文本格式，还不如不用链接语法。不知道是什么原理。</p>
-<p>2.很气。重新安装了hexo。这次更新了core-js，更新了<a href="mailto:hexo-renderer-marked@2.0.0" target="_blank" rel="noopener">hexo-renderer-marked@2.0.0</a>，还是没用。仔细比对了自带的hello world文件，原来是语法用错了。插入链接是 [描述] (链接) 中间没空格。</p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/10/建站过程/" data-id="ck0efwopt0006xgpy03xv80rz" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-北京自然博物馆转一圈(updating...)" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/10/北京自然博物馆转一圈(updating...)/" class="article-date">
-  <time datetime="2019-09-10T13:55:04.370Z" itemprop="datePublished">2019-09-10</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/瞎逛/">瞎逛</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/10/北京自然博物馆转一圈(updating...)/">北京自然博物馆转一圈(updating...)</a>
-    </h1>
-  
-
-      </header>
     
-    <div class="article-entry" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody">
+
       
-        <h1 id="图"><a href="#图" class="headerlink" title="图"></a>图</h1><p><img src="https://raw.githubusercontent.com/dronemodel/privateimgbed/master/20190908115326.JPG" alt><br><img src="https://raw.githubusercontent.com/dronemodel/privateimgbed/master/20190908115327.JPG" alt><br><img src="https://raw.githubusercontent.com/dronemodel/privateimgbed/master/20190908115328.JPG" alt></p>
-        
-          <p class="article-more-link">
-            <a href="/2019/09/10/北京自然博物馆转一圈(updating...)/#more">Read More</a>
-          </p>
+          <p>简单写一下我建立blog的经历。</p><p>假期里到各大博物馆看了看，回来就想写点东西。一开始先搜了一下wordpress怎么建站，因为我那时只知道这个，然而在搜索过程中我看到有很多人推荐hexo，轻便快捷。就改选了hexo。建站过程都是跟着教程做的，教程也是网上随便找的，困难在于路上遇到的各种麻烦，我简单写一下。</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/日志/ck0eh8z0d0006ewpy8hl1opjt#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/10/北京自然博物馆转一圈(updating...)/" data-id="ck0efwopv0008xgpy3rfsjym8" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
-
-  
-    <article id="post-下载站" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/10/下载站/" class="article-date">
-  <time datetime="2019-09-10T13:55:04.365Z" itemprop="datePublished">2019-09-10</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/功能/">功能</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
         
+      </footer>
+  </div>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/10/下载站/">下载站</a>
-    </h1>
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="https://workspaceofdronemodel.com/瞎逛/ck0eh8z0e0008ewpy12hq5vqa">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dronemodel">
+      <meta itemprop="description" content="a private blog">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="workspace of dronemodel">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/瞎逛/ck0eh8z0e0008ewpy12hq5vqa" class="post-title-link" itemprop="url">北京自然博物馆转一圈(updating...)</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-10 21:55:04 / 修改时间：12:15:15" itemprop="dateCreated datePublished" datetime="2019-09-10T21:55:04+08:00">2019-09-10</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/瞎逛/" itemprop="url" rel="index"><span itemprop="name">瞎逛</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/瞎逛/ck0eh8z0e0008ewpy12hq5vqa#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/瞎逛/ck0eh8z0e0008ewpy12hq5vqa" itemprop="commentCount"></span></a>
+  </span>
+  
   
 
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>{[下载站]:<a href="http://198.13.62.245:554" target="_blank" rel="noopener">http://198.13.62.245:554</a> }</p>
-<p>{[下载站]:<a href="http://198.13.62.245:554" target="_blank" rel="noopener">http://198.13.62.245:554</a></p>
-<p><a href="http://198.13.62.245:554" target="_blank" rel="noopener">下载站</a></p>
-<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>!</p>
-<p>[-下载站-]:<a href="http://198.13.62.245:554" target="_blank" rel="noopener">http://198.13.62.245:554</a> :hamburger:</p>
-<p>[<a href="http://198.13.62.245:554]" target="_blank" rel="noopener">http://198.13.62.245:554]</a> : lia</p>
-<p>&lt;<a href="http://www.baidu.com&gt;" target="_blank" rel="noopener">www.baidu.com&gt;</a></p>
-<p><a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a></p>
+          <h1 id="图"><a href="#图" class="headerlink" title="图"></a>图</h1><p><img src="https://raw.githubusercontent.com/dronemodel/privateimgbed/master/20190908115326.JPG" alt><br><img src="https://raw.githubusercontent.com/dronemodel/privateimgbed/master/20190908115327.JPG" alt><br><img src="https://raw.githubusercontent.com/dronemodel/privateimgbed/master/20190908115328.JPG" alt></p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/瞎逛/ck0eh8z0e0008ewpy12hq5vqa#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="https://workspaceofdronemodel.com/功能/ck0eh8z010000ewpyxjitllmg">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dronemodel">
+      <meta itemprop="description" content="a private blog">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="workspace of dronemodel">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/功能/ck0eh8z010000ewpyxjitllmg" class="post-title-link" itemprop="url">下载站</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-10 21:55:04" itemprop="dateCreated datePublished" datetime="2019-09-10T21:55:04+08:00">2019-09-10</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-09-11 07:06:53" itemprop="dateModified" datetime="2019-09-11T07:06:53+08:00">2019-09-11</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/功能/" itemprop="url" rel="index"><span itemprop="name">功能</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/功能/ck0eh8z010000ewpyxjitllmg#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/功能/ck0eh8z010000ewpyxjitllmg" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a href="http://198.13.62.245:554" target="_blank" rel="noopener">下载站</a></p>
 <p>用户名: user</p>
 <p>密码: y87687e4ejkdbSG&amp;12N22$h</p>
 
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/10/下载站/" data-id="ck0efwopq0004xgpy53e345jg" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/10/hello-world/" class="article-date">
-  <time datetime="2019-09-10T13:55:04.360Z" itemprop="datePublished">2019-09-10</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/日志/">日志</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
         
+      </footer>
+  </div>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/10/hello-world/">Hello World</a>
-    </h1>
   
+  
+  </article>
 
-      </header>
     
-    <div class="article-entry" itemprop="articleBody">
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="https://workspaceofdronemodel.com/日志/ck0eh8z0b0004ewpyavg0jwd4">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dronemodel">
+      <meta itemprop="description" content="a private blog">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="workspace of dronemodel">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/日志/ck0eh8z0b0004ewpyavg0jwd4" class="post-title-link" itemprop="url">Hello World</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-10 21:55:04" itemprop="dateCreated datePublished" datetime="2019-09-10T21:55:04+08:00">2019-09-10</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-09-07 19:36:34" itemprop="dateModified" datetime="2019-09-07T19:36:34+08:00">2019-09-07</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/日志/" itemprop="url" rel="index"><span itemprop="name">日志</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/日志/ck0eh8z0b0004ewpyavg0jwd4#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/日志/ck0eh8z0b0004ewpyavg0jwd4" itemprop="commentCount"></span></a>
+  </span>
+  
+  
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+        </div>
+      </header>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+      
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/日志/ck0eh8z0b0004ewpyavg0jwd4#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/10/hello-world/" data-id="ck0efwopn0002xgpyaj200uqg" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
-
-  
-    <article id="post-TEST" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/07/TEST/" class="article-date">
-  <time datetime="2019-09-07T03:45:46.000Z" itemprop="datePublished">2019-09-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/日志/">日志</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
         
+      </footer>
+  </div>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/07/TEST/">TEST</a>
-    </h1>
   
+  
+  </article>
 
-      </header>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>WOW!!</p>
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="https://workspaceofdronemodel.com/日志/ck0eh8z060002ewpyafcv01f6">
 
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dronemodel">
+      <meta itemprop="description" content="a private blog">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="workspace of dronemodel">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/日志/ck0eh8z060002ewpyafcv01f6" class="post-title-link" itemprop="url">TEST</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-07 11:45:46 / 修改时间：16:00:45" itemprop="dateCreated datePublished" datetime="2019-09-07T11:45:46+08:00">2019-09-07</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/日志/" itemprop="url" rel="index"><span itemprop="name">日志</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/日志/ck0eh8z060002ewpyafcv01f6#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/日志/ck0eh8z060002ewpyafcv01f6" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>WOW!!</p>
+
+        
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/07/TEST/" data-id="ck0efwoph0000xgpyymihw8fo" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
 
-
-  
-    <article id="post-first-blog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/07/first-blog/" class="article-date">
-  <time datetime="2019-09-07T01:07:32.000Z" itemprop="datePublished">2019-09-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/日志/">日志</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
     
     
-      <header class="article-header">
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
         
+      </footer>
+  </div>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/07/first-blog/">first blog</a>
-    </h1>
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="https://workspaceofdronemodel.com/日志/ck0eh8z0d0005ewpy7pot4xz0">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="dronemodel">
+      <meta itemprop="description" content="a private blog">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="workspace of dronemodel">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/日志/ck0eh8z0d0005ewpy7pot4xz0" class="post-title-link" itemprop="url">first blog</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-07 09:07:32" itemprop="dateCreated datePublished" datetime="2019-09-07T09:07:32+08:00">2019-09-07</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-09-08 09:20:18" itemprop="dateModified" datetime="2019-09-08T09:20:18+08:00">2019-09-08</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/日志/" itemprop="url" rel="index"><span itemprop="name">日志</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/日志/ck0eh8z0d0005ewpy7pot4xz0#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/日志/ck0eh8z0d0005ewpy7pot4xz0" itemprop="commentCount"></span></a>
+  </span>
+  
   
 
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <h1 id="这是第一篇"><a href="#这是第一篇" class="headerlink" title="这是第一篇"></a>这是第一篇</h1><p><img src="https://i.loli.net/2019/09/08/IieP7wx1l8DzBUR.png" alt></p>
+          <h1 id="这是第一篇"><a href="#这是第一篇" class="headerlink" title="这是第一篇"></a>这是第一篇</h1><p><img src="https://i.loli.net/2019/09/08/IieP7wx1l8DzBUR.png" alt></p>
 <p>从今天起，我将持续记录工作状况。我的Workspace分为多个部分，用tag标记分类，具体分几类还没想好。希望能坚持下去。</p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/07/first-blog/" data-id="ck0efwops0005xgpyn04sbdpk" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
         
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/功能/">功能</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/日志/">日志</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/瞎逛/">瞎逛</a></li></ul>
+      
     </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
   </div>
 
+  
 
-  
-    
 
+          </div>
+          
+
+        </div>
+          
   
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li></ul>
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
   </div>
 
+  <aside class="sidebar">
+    <div class="sidebar-inner">
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2019/09/10/建站过程/">建站过程</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/10/北京自然博物馆转一圈(updating...)/">北京自然博物馆转一圈(updating...)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/10/下载站/">下载站</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/10/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/07/TEST/">TEST</a>
-          </li>
-        
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
       </ul>
-    </div>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/images/avatar.png"
+      alt="dronemodel">
+  <p class="site-author-name" itemprop="name">dronemodel</p>
+  <div class="site-description" itemprop="description">a private blog</div>
+</div>
+  <nav class="site-state motion-element">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+  </nav>
+  <div class="cc-license motion-element" itemprop="license">
+    
+  
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">dronemodel</span>
+</div>
+  <div class="powered-by">powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.4.0</div>
+
+        
+<div class="busuanzi-count">
+  <script pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
   
-</aside>
+    <span class="post-meta-divider">|</span>
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
+    </footer>
   </div>
-</footer>
+
+  
+
+
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script src="/lib/pjax/pjax.min.js?v=0.2.8"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
+<script src="/js/schemes/pisces.js?v=7.4.0"></script>
+
+<script src="/js/next-boot.js?v=7.4.0"></script>
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
+    var id = element.id || '';
+    var src = element.src || '';
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (id !=='') {
+      script.id = element.id;
+    }
+    if (src !== '') {
+      script.src = src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail';
+  guest = guest.split(',').filter(item => {
+    return GUEST.includes(item);
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: false,
+    appId: 'DQF6phBhST2Bmjx3dHNKnvtm-MdYXbMMI',
+    appKey: 'CmLHLBKsg74SI6l4rg1Q7lqe',
+    placeholder: '请输入评论内容',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn',
+    path: location.pathname
+  });
+}, window.Valine);
+</script>
+
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
-
-  </div>
 </body>
 </html>
