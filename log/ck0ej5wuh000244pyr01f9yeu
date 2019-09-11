@@ -55,18 +55,18 @@
   };
 </script>
 
-  <meta name="description" content="这是第一篇 从今天起，我将持续记录工作状况。我的Workspace分为多个部分，用tag标记分类，具体分几类还没想好。希望能坚持下去。">
+  <meta name="description" content="这是第一篇 从今天起，我将持续记录工作状况。我的Workspace分为多个部分，用tag标记分类，具体分几类还没想好。希望能坚持下去。          document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }">
 <meta property="og:type" content="article">
 <meta property="og:title" content="first blog">
-<meta property="og:url" content="https://workspaceofdronemodel.com/log/ck0eiwbyv000490pyqt3msx9b">
+<meta property="og:url" content="https://workspaceofdronemodel.com/log/ck0ej5wuh000244pyr01f9yeu">
 <meta property="og:site_name" content="workspace of dronemodel">
-<meta property="og:description" content="这是第一篇 从今天起，我将持续记录工作状况。我的Workspace分为多个部分，用tag标记分类，具体分几类还没想好。希望能坚持下去。">
+<meta property="og:description" content="这是第一篇 从今天起，我将持续记录工作状况。我的Workspace分为多个部分，用tag标记分类，具体分几类还没想好。希望能坚持下去。          document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-09-08T01:20:18.630Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="first blog">
-<meta name="twitter:description" content="这是第一篇 从今天起，我将持续记录工作状况。我的Workspace分为多个部分，用tag标记分类，具体分几类还没想好。希望能坚持下去。">
-  <link rel="canonical" href="https://workspaceofdronemodel.com/log/ck0eiwbyv000490pyqt3msx9b">
+<meta name="twitter:description" content="这是第一篇 从今天起，我将持续记录工作状况。我的Workspace分为多个部分，用tag标记分类，具体分几类还没想好。希望能坚持下去。          document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }">
+  <link rel="canonical" href="https://workspaceofdronemodel.com/log/ck0ej5wuh000244pyr01f9yeu">
 
 
 <script id="page-configurations">
@@ -212,7 +212,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="https://workspaceofdronemodel.com/log/ck0eiwbyv000490pyqt3msx9b">
+    <link itemprop="mainEntityOfPage" href="https://workspaceofdronemodel.com/log/ck0ej5wuh000244pyr01f9yeu">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dronemodel">
@@ -288,7 +288,7 @@
       
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/log/ck0eiwbyv000490pyqt3msx9b#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/log/ck0eiwbyv000490pyqt3msx9b" itemprop="commentCount"></span></a>
+    <a title="valine" href="/log/ck0ej5wuh000244pyr01f9yeu#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/log/ck0ej5wuh000244pyr01f9yeu" itemprop="commentCount"></span></a>
   </span>
   
   
@@ -304,7 +304,25 @@
       
         <h1 id="这是第一篇"><a href="#这是第一篇" class="headerlink" title="这是第一篇"></a>这是第一篇</h1><p><img alt data-src="https://i.loli.net/2019/09/08/IieP7wx1l8DzBUR.png"></p>
 <p>从今天起，我将持续记录工作状况。我的Workspace分为多个部分，用tag标记分类，具体分几类还没想好。希望能坚持下去。</p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
     </div>
 
     
@@ -320,7 +338,7 @@
     <strong>本文作者： </strong>dronemodel</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://workspaceofdronemodel.com/log/ck0eiwbyv000490pyqt3msx9b" title="first blog">https://workspaceofdronemodel.com/log/ck0eiwbyv000490pyqt3msx9b</a>
+    <a href="https://workspaceofdronemodel.com/log/ck0ej5wuh000244pyr01f9yeu" title="first blog">https://workspaceofdronemodel.com/log/ck0ej5wuh000244pyr01f9yeu</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -336,7 +354,7 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/log/ck0eiwbyw000590py8ejjx5wj" rel="next" title="Hello World">
+                <a href="/log/ck0ej5wul000544pyhkweqjjz" rel="next" title="Hello World">
                   <i class="fa fa-chevron-left"></i> Hello World
                 </a>
               
@@ -346,7 +364,7 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/log/ck0eiwbym000090py0z1l3a81" rel="prev" title="TEST">
+                <a href="/log/ck0ej5wuc000044pyup8q15k6" rel="prev" title="TEST">
                   TEST <i class="fa fa-chevron-right"></i>
                 </a>
               
