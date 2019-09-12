@@ -1687,7 +1687,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #4b4a5b;
+  background: #39cdda;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2263,7 +2263,7 @@ ul.breadcrumb li + li:last-child {
   float: right;
   min-height: 700px;
   padding: 40px;
-  width: calc(100% - 360px);
+  width: calc(100% - 252px);
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .content-wrap {
@@ -2464,7 +2464,7 @@ ul.breadcrumb li + li:last-child {
 }
 .sidebar-inner.affix {
   position: fixed;
-  top: 120px;
+  top: 12px;
 }
 .sidebar-inner.affix-bottom {
   position: absolute;
@@ -2563,14 +2563,14 @@ ul.breadcrumb li + li:last-child {
 #posts > article + article .post-block {
   border-radius: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
-  margin-top: 120px;
+  margin-top: 12px;
 }
 .comments {
   background: #fff;
   border-radius: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   margin: auto;
-  margin-top: 120px;
+  margin-top: 12px;
   padding: 40px;
 }
 .tabs-comment {
@@ -2596,7 +2596,7 @@ ul.breadcrumb li + li:last-child {
   border-radius: initial;
   border-top: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
-  margin: 120px 0 0;
+  margin: 12px 0 0;
   padding: 10px 0 10px;
 }
 .pagination .prev,
@@ -2617,7 +2617,7 @@ ul.breadcrumb li + li:last-child {
 }
 .sub-menu + #content > #posts .post-block {
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
-  margin-top: 120px;
+  margin-top: 12px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .sub-menu + #content > #posts .post-block {
@@ -2670,20 +2670,20 @@ ul.breadcrumb li + li:last-child {
     margin: initial;
   }
   .posts-expand .post-button {
-    margin: 120px 0;
+    margin: 12px 0;
   }
   .post-block {
     border-radius: initial;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
     min-height: auto;
-    padding: 120px;
+    padding: 12px;
   }
   #posts > article + article .post-block {
     margin-top: 8px;
   }
   .comments {
     margin-top: 8px;
-    padding: 10px 120px;
+    padding: 10px 12px;
   }
   .pagination {
     margin: 8px 0 0;
