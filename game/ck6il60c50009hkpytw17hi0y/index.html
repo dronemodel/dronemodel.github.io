@@ -58,15 +58,15 @@
   <meta name="description" content="记录用wol远程开机的配置流程关键词：wol    termux    vps    frp    python    flask(webserver)实现效果：在浏览器中输入预设置的ip:port，进入登录页面，登录后远程电脑即可自动开机">
 <meta property="og:type" content="article">
 <meta property="og:title" content="远程开机的一种实现方法">
-<meta property="og:url" content="https://workspaceofdronemodel.com/game/ck6ikvgut000984py7tk0pfsf/index.html">
+<meta property="og:url" content="https://workspaceofdronemodel.com/game/ck6il60c50009hkpytw17hi0y/index.html">
 <meta property="og:site_name" content="Workspace">
 <meta property="og:description" content="记录用wol远程开机的配置流程关键词：wol    termux    vps    frp    python    flask(webserver)实现效果：在浏览器中输入预设置的ip:port，进入登录页面，登录后远程电脑即可自动开机">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-12T00:30:14.184Z">
+<meta property="og:updated_time" content="2020-02-12T00:38:22.653Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="远程开机的一种实现方法">
 <meta name="twitter:description" content="记录用wol远程开机的配置流程关键词：wol    termux    vps    frp    python    flask(webserver)实现效果：在浏览器中输入预设置的ip:port，进入登录页面，登录后远程电脑即可自动开机">
-  <link rel="canonical" href="https://workspaceofdronemodel.com/game/ck6ikvgut000984py7tk0pfsf/">
+  <link rel="canonical" href="https://workspaceofdronemodel.com/game/ck6il60c50009hkpytw17hi0y/">
 
 
 <script id="page-configurations">
@@ -225,7 +225,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="https://workspaceofdronemodel.com/game/ck6ikvgut000984py7tk0pfsf/">
+    <link itemprop="mainEntityOfPage" href="https://workspaceofdronemodel.com/game/ck6il60c50009hkpytw17hi0y/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dronemodel">
@@ -264,7 +264,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020.02.12 08:30:14" itemprop="dateModified" datetime="2020-02-12T08:30:14+08:00">2020.02.12</time>
+                <time title="修改时间：2020.02.12 08:38:22" itemprop="dateModified" datetime="2020-02-12T08:38:22+08:00">2020.02.12</time>
               </span>
             
           
@@ -293,7 +293,7 @@
       
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/game/ck6ikvgut000984py7tk0pfsf/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/game/ck6ikvgut000984py7tk0pfsf/" itemprop="commentCount"></span></a>
+    <a title="valine" href="/game/ck6il60c50009hkpytw17hi0y/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/game/ck6il60c50009hkpytw17hi0y/" itemprop="commentCount"></span></a>
   </span>
   
   
@@ -334,8 +334,6 @@
 <li><p>新建webserver.py文件    <a href="https://www.liaoxuefeng.com/wiki/897692888725344/923056952308928" target="_blank" rel="noopener">参考地址(边栏’Web开发’内的5条)</a></p>
 <p>参考代码:</p>
    <figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">from flask import Flask</span><br><span class="line">from flask import request</span><br><span class="line">from os import system</span><br><span class="line"></span><br><span class="line">app = Flask(__name__)</span><br><span class="line"></span><br><span class="line">@app.route('/',methods=['GET'])</span><br><span class="line">def login_form():</span><br><span class="line">    return '''<span class="tag"><<span class="name">form</span> <span class="attr">action</span>=<span class="string">"/"</span> <span class="attr">method</span>=<span class="string">"post"</span>></span></span><br><span class="line">              <span class="tag"><<span class="name">p</span>></span>username: <span class="tag"><<span class="name">input</span> <span class="attr">name</span>=<span class="string">"username"</span>></span><span class="tag">p</span>></span><br><span class="line">              <span class="tag"><<span class="name">p</span>></span>password: <span class="tag"><<span class="name">input</span> <span class="attr">name</span>=<span class="string">"password"</span> <span class="attr">type</span>=<span class="string">"password"</span>></span><span class="tag">p</span>></span><br><span class="line">              <span class="tag"><<span class="name">p</span>></span><span class="tag"><<span class="name">button</span> <span class="attr">type</span>=<span class="string">"submit"</span>></span>submit<span class="tag">button</span>></span><span class="tag">p</span>><br><span class="line">              <span class="tag">form</span>></span>'''<br><span class="line"></span><br><span class="line">@app.route('/',methods=['POST'])</span><br><span class="line">def login():</span><br><span class="line">    if request.form['username']=='你的用户名' and request.form['password']=='你的密码': #自己改</span><br><span class="line">        system('./wol.sh') #执行上一步写的唤醒脚本</span><br><span class="line">        return '<span class="tag"><<span class="name">h3</span>></span>success<span class="tag">h3</span>></span>'<br><span class="line">    return '<span class="tag"><<span class="name">h3</span>></span>ok<span class="tag">h3</span>></span>'<br><span class="line"></span><br><span class="line">if __name__ == '__main__':</span><br><span class="line">    app.run(host='0.0.0.0') #默认端口5000，可以自己设置：port=想要的端口</span><br></pre></td></tr></tbody></table></figure>
-
-
 
 
 </li>
@@ -395,7 +393,7 @@
     <strong>本文作者： </strong>dronemodel</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://workspaceofdronemodel.com/game/ck6ikvgut000984py7tk0pfsf/" title="远程开机的一种实现方法">https://workspaceofdronemodel.com/game/ck6ikvgut000984py7tk0pfsf/</a>
+    <a href="https://workspaceofdronemodel.com/game/ck6il60c50009hkpytw17hi0y/" title="远程开机的一种实现方法">https://workspaceofdronemodel.com/game/ck6il60c50009hkpytw17hi0y/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -411,7 +409,7 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/game/ck6ikvguo000484pypwk29xds/" rel="next" title="transmission报错"permission denied"的一种解决方法">
+                <a href="/game/ck6il60c10005hkpy19rrqoed/" rel="next" title="transmission报错"permission denied"的一种解决方法">
                   <i class="fa fa-chevron-left"></i> transmission报错"permission denied"的一种解决方法
                 </a>
               
